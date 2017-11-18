@@ -1,0 +1,29 @@
+<template lang="html">
+  <div class="home">
+    <div class="container">
+      <h1 class="title has-text-centered animated zoomIn">
+        Maribel &amp; David
+      </h1>
+      <p class="subtitle has-text-centered animated tada">
+        Are Getting Married
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="css" scoped>
+  .home {
+    background-image: url(../assets/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 55%;
+    height: 100vh;
+    width: 100vw;
+  }
+</style>
