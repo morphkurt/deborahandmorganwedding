@@ -24,15 +24,19 @@ export default {
 </script>
 
 <style lang="css">
- * {
+  * {
    font-family: 'Lato', sans-serif;
- }
+  }
+
+  body {
+    height: 100vh;
+  }
+
   .container {
     padding-top: 62px;
   }
 
   .title {
-    font-size: 40px;
     font-weight: 100;
     line-height: 1em;
     text-transform: none;
@@ -42,14 +46,12 @@ export default {
   }
 
   .subtitle {
-    font-size: 16px;
     font-weight: 300;
     line-height: 1.4em;
     text-transform: uppercase;
     text-decoration: none;
     font-style: normal;
     color: rgba(28,28,28,.9);
-    padding-top: 10px;
   }
 
   .navbar-item {
@@ -64,7 +66,6 @@ export default {
 
   @media screen and (min-width: 769px) {
     .title {
-      font-size: 100px;
       font-weight: 100;
       line-height: 1em;
       text-transform: none;
@@ -74,14 +75,12 @@ export default {
     }
 
     .subtitle {
-      font-size: 20px;
       font-weight: 300;
       line-height: 1.4em;
       text-transform: uppercase;
       text-decoration: none;
       font-style: normal;
       color: rgba(28,28,28,.9);
-      padding-top: 10px;
     }
 
     .navbar-item {

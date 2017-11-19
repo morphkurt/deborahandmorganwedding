@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="container">
     <section class="section">
-      <h1 class="title has-text-centered">
+      <h1 class="title is-1 is-spaced has-text-centered">
         Registry
       </h1>
       <p class="subtitle has-text-centered">
