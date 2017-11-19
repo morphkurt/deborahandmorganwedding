@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="container">
     <section class="section">
-      <h1 class="title has-text-centered">RSVP</h1>
+      <h1 class="title is-1 has-text-centered">RSVP</h1>
       <div v-if="errors">
         {{ errors }}
       </div>

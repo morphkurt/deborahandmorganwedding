@@ -26,4 +26,22 @@ export default {
     height: 100vh;
     width: 100vw;
   }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 769px) {
+    .title {
+      font-size: 100px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+    }
+  }
 </style>
