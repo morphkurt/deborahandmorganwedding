@@ -19,21 +19,26 @@ export default {
   },
   components: {
     Navbar
-  }
+  },
 }
 </script>
 
 <style lang="css">
   * {
-   font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
-  body {
-    height: 100vh;
+  html, body, #app{
+    height: 100%;
+    background-color: #efefef;
   }
 
-  .container {
-    padding-top: 62px;
+  .section {
+    background-color: white;
+  }
+
+  .hero {
+    margin-top: 52px;
   }
 
   .title {
@@ -91,12 +96,6 @@ export default {
       text-decoration: none;
       font-style: normal;
       letter-spacing: 3px;
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    .container {
-      padding-top: 102px;
     }
   }
 
