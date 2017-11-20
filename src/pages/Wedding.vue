@@ -23,6 +23,9 @@
           <p class="has-text-centered"><a class="button is-info" href="https://www.google.com/maps/place/St+Francis+of+Assisi+Catholic+Church/@41.8669567,-87.6482355,19z/data=!4m17!1m11!4m10!1m3!2m2!1d-87.6466584!2d41.8716865!1m5!1m1!1s0x880e2cefeccf2fef:0xbbbceb8435f497b1!2m2!1d-87.6476863!2d41.866978!3m4!1s0x880e2cefeccf2fef:0xbbbceb8435f497b1!8m2!3d41.866978!4d-87.6476863">Directions</a></p>
         </section>
         <section class="section">
+          <hr>
+        </section>
+        <section class="section">
           <h1 class="title is-1 is-spaced has-text-centered">Reception</h1>
           <p class="subtitle has-text-centered">Palace Regency Banquet Hall</p>
           <p class="has-text-centered">Begins at 6:00pm</p>
@@ -41,6 +44,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  hr {
+    margin: 0;
+  }
+
   .button {
     margin-top: 15px;
   }
