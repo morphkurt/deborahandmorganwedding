@@ -18,13 +18,13 @@ export default {
 
 <style lang="css" scoped>
   .home {
+    height: 100%;
     background-image: url(../assets/images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 55%;
-    height: 100vh;
-    width: 100vw;
+    padding-top: 102px;
   }
 
   .title {
