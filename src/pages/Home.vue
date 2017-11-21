@@ -24,7 +24,7 @@ export default {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 55%;
-    padding-top: 102px;
+    padding-top: 72px;
   }
 
   .title {
