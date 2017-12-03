@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
   .button {
     margin-top: 15px;
   }
