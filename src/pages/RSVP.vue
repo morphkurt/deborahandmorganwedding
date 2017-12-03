@@ -1,25 +1,20 @@
 <template lang="html">
-  <div class="columns">
-    <div class="column is-half is-offset-one-quarter">
-      <section class="section">
-        <h1 class="title is-1 has-text-centered">RSVP</h1>
-        <div v-if="errors">
-          {{ errors }}
-        </div>
-        <form action='localhost:9292' method="POST" v-on:submit.prevent="getData">
-          <div class="field">
-            <label class="label">RSVP Code</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Enter your RSVP code" disabled>
-            </div>
-            <p class="help">This is the code found in your RSVP letter</p>
-            <div class="control">
-              <button class="button is-primary" disabled>Submit</button>
-            </div>
-          </div>
-        </form>
-      </section>
+  <div class="">
+    <div v-if="errors">
+      {{ errors }}
     </div>
+    <form action='localhost:9292' method="POST" v-on:submit.prevent="getData">
+      <div class="field">
+        <label class="label">RSVP Code</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Enter your RSVP code" v-model="rsvpCode">
+        </div>
+        <p class="help">This is the code found in your RSVP letter</p>
+        <div class="control">
+          <button class="button is-primary">Submit</button>
+        </div>
+      </div>
+    </form>
   </div>
 </template>
 
@@ -29,25 +24,27 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      errors: ""
+      animationName: 'fade',
+      rsvpCode: '',
+      errors: ''
     }
   },
   methods: {
     getData () {
-      this.errors = "Sorry this isnt working yet...stop trying to hack bro."
-      //Enable this when we start sending code
-      // axios.post('http://localhost:9292/')
-      //   .then((response) => {
-      //     console.log(response);
-      //     this.errors = response.data.error
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   });
+      // Enable this when we start sending code
+      axios.get(`http://localhost:9292/rsvp/${this.rsvpCode}`)
+        .then((response) => {
+          this.$store.dispatch('ADD_INVITATION', response.data.invitation);
+          this.$store.dispatch('ADD_GUESTS', response.data.guests);
+          this.$router.push({ path: `rsvp/${this.rsvpCode}` });
+        })
+        .catch((error) => {
+          this.errors = "Sorry, couldn't find your invitation. Please input your RSVP code one more time."
+        });
     }
   }
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 </style>

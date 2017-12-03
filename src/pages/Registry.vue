@@ -2,10 +2,10 @@
   <div class="columns">
     <div class="column is-half is-offset-one-quarter">
       <section class="section">
-        <h1 class="title is-1 is-spaced has-text-centered">
+        <h1 class="title is-2 is-spaced has-text-centered">
           Registry
         </h1>
-        <p class="subtitle has-text-centered">
+        <p class="subtitle is-6 has-text-centered">
           We are registered at:
         </p>
         <ul v-if="placesWeAreRegistered.length > 0">

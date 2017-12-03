@@ -5,7 +5,11 @@ import Layout from '../pages/Layout.vue';
 import Home from '../pages/Home.vue';
 import Wedding from '../pages/Wedding.vue';
 import Registry from '../pages/Registry.vue';
+import Thanks from '../pages/Thanks.vue'
+import RSVPLayout from '../pages/RSVPLayout.vue'
 import RSVP from '../pages/RSVP.vue';
+import Code from '../pages/Code.vue';
+import CodeEdit from '../pages/CodeEdit.vue';
 
 const routes = [
     {
@@ -26,7 +30,25 @@ const routes = [
         },
         {
           path: 'rsvp',
-          component: RSVP
+          component: RSVPLayout,
+          children: [
+            {
+              path: '',
+              component: RSVP
+            },
+            {
+              path: ':code',
+              component: Code
+            },
+            {
+              path: ':code/edit',
+              component: CodeEdit
+            },
+          ]
+        },
+        {
+          path: 'thanks',
+          component: Thanks
         }
       ]
     },

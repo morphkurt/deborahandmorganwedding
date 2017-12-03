@@ -2,8 +2,8 @@
   <div class="columns">
     <div class="column is-half is-offset-one-quarter">
       <section class="section">
-        <h1 class="title is-1 is-spaced has-text-centered">Ceremony</h1>
-        <p class="subtitle has-text-centered">St Francis of Assisi Church</p>
+        <h1 class="title is-2 is-spaced has-text-centered">Ceremony</h1>
+        <p class="subtitle is-6 has-text-centered">St Francis of Assisi Church</p>
         <p class="has-text-centered">Begins at 1:00pm</p>
         <p class="has-text-centered">813 W Roosevelt Rd</p>
         <p class="has-text-centered">Chicago, IL 60608</p>
@@ -13,8 +13,8 @@
         <hr>
       </section>
       <section class="section">
-        <h1 class="title is-1 is-spaced has-text-centered">Reception</h1>
-        <p class="subtitle has-text-centered">Palace Regency Banquet Hall</p>
+        <h1 class="title is-2 is-spaced has-text-centered">Reception</h1>
+        <p class="subtitle is-6 has-text-centered">Palace Regency Banquet Hall</p>
         <p class="has-text-centered">Begins at 6:00pm</p>
         <p class="has-text-centered">5600 W Cermak Rd</p>
         <p class="has-text-centered">Cicero, IL  60814</p>

@@ -1,10 +1,10 @@
 <template lang="html">
   <div class="home">
     <div class="container">
-      <h1 class="title has-text-centered animated zoomIn">
+      <h1 class="title has-text-centered">
         Maribel &amp; David
       </h1>
-      <p class="subtitle has-text-centered animated tada">
+      <p class="subtitle has-text-centered">
         Are Getting Married
       </p>
     </div>
