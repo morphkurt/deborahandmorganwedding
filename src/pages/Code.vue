@@ -70,8 +70,7 @@ export default {
       .then((response) => {
         this.$store.dispatch('UPDATE_INVITATION', response.data.invitation);
         this.$store.dispatch('UPDATE_GUESTS', response.data.guests);
-        this.invitation = response.data.invitation;
-        this.guests = response.data.guests
+        this.$router.push({ path: '/thanks' });
       })
       .catch((error) => {
         this.errors = "Sorry, couldn't find your invitation. Please input your RSVP code one more time."
