@@ -1,5 +1,23 @@
 <template>
   <div id="app">
+    <div v-bind:class="{'is-active': isActive, 'fadeOut': fadeOut}" class="modal language-modal animated">
+      <div class="modal-background language-modal-background"></div>
+      <div class="modal-content">
+        <h1 class="title has-text-centered">Choose Your Language</h1>
+        <div class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <a v-on:click="selectLanguage('English')" class="button is-primary is-medium">
+              English
+            </a>
+          </p>
+          <p class="control">
+            <a v-on:click="selectLanguage('Spanish')" class="button is-light is-medium">
+              Español
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
     <navbar></navbar>
     <transition :name="animationName" mode="out-in">
       <router-view></router-view>
@@ -14,12 +32,30 @@ export default {
   name: 'app',
   data () {
     return {
-      animationName: 'fade'
+      animationName: 'fade',
+      language: this.$store.getters.get_language,
+      isActive: true,
+      fadeOut: false
     }
   },
   components: {
     Navbar
   },
+  methods: {
+    selectLanguage: function (language) {
+      let self = this;
+      let languageModal= document.getElementsByClassName('language-modal')[0];
+      self.$store.dispatch('UPDATE_LANGUAGE', language);
+      this.language = this.$store.getters.get_language;
+      self.fadeOut = true;
+      languageModal.addEventListener("animationend", function(){
+        self.isActive = false;
+      }, false);
+    }
+  },
+  mounted: function () {
+    this.language === "" ? this.isActive = true: this.isActive = false;
+  }
 }
 </script>
 
@@ -67,6 +103,18 @@ export default {
     text-decoration: none;
     font-style: normal;
     letter-spacing: 3px;
+  }
+
+  .language-modal {
+    z-index: 40;
+  }
+
+  .language-modal-background {
+    background-color: white;
+  }
+
+  .story {
+    padding-top: 102px;
   }
 
   @media screen and (min-width: 769px) {

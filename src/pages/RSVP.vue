@@ -11,7 +11,7 @@
         </div>
         <p class="help">This is the code found in your RSVP letter</p>
         <div class="control">
-          <button class="button is-primary">Submit</button>
+          <button class="button is-info">Submit</button>
         </div>
       </div>
     </form>

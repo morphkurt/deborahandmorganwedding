@@ -10,6 +10,7 @@
     </div>
     <div class="navbar-menu" v-bind:class="{'is-active': isActive}" v-on:click="navBarActive">
       <router-link to="/" class="navbar-item">Home</router-link>
+      <router-link to="/story" class="navbar-item">Our Story</router-link>
       <router-link to="/wedding" class="navbar-item">Wedding</router-link>
       <router-link to="/registry" class="navbar-item">Registry</router-link>
       <router-link to="/rsvp" class="navbar-item">RSVP</router-link>

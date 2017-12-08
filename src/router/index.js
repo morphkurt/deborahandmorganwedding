@@ -10,6 +10,7 @@ import RSVPLayout from '../pages/RSVPLayout.vue'
 import RSVP from '../pages/RSVP.vue';
 import Code from '../pages/Code.vue';
 import CodeEdit from '../pages/CodeEdit.vue';
+import Story from '../pages/Story.vue';
 
 const routes = [
     {
@@ -52,6 +53,10 @@ const routes = [
         }
       ]
     },
+    {
+      path: '/story',
+      component: Story
+    }
   ]
 
 Vue.use(VueRouter);

@@ -6,7 +6,8 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   state: {
     invitation: {},
-    guests: []
+    guests: [],
+    language: ''
   },
   actions: {
     ADD_INVITATION: function ({commit}, invitation) {
@@ -20,6 +21,9 @@ const store = new Vuex.Store({
     },
     UPDATE_GUESTS: function ({commit}, guests) {
       commit("UPDATE_GUESTS_MUTATION", guests);
+    },
+    UPDATE_LANGUAGE: function ({commit}, language) {
+      commit("UPDATE_LANGUAGE_MUTATION", language);
     }
   },
   mutations: {
@@ -34,6 +38,9 @@ const store = new Vuex.Store({
     },
     UPDATE_GUESTS_MUTATION: function (state, guests) {
       state.guests = guests
+    },
+    UPDATE_LANGUAGE_MUTATION: function (state, language) {
+      state.language = language
     }
   },
   getters: {
@@ -42,6 +49,9 @@ const store = new Vuex.Store({
     },
     get_guests: state => {
       return state.guests;
+    },
+    get_language: state => {
+      return state.language;
     }
   }
 });
