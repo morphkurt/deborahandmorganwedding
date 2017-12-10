@@ -2,58 +2,72 @@
   <div class="container story">
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <article class="tile is-child notification is-success story-1">
-          <div class="content">
-            <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </article>
-      </div>
-      <div class="tile is-vertical is-8">
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-danger story-3">
-            <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
+        <div class="tile is-child box">
+          <img src="/src/assets/images/story-3.jpg" alt="">
+          <h1 class="title has-text-centered">Engaged</h1>
+          <h3 class="subtitle has-text-centered">September 2nd, 2017</h3>
         </div>
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-primary story-2">
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article class="tile is-child notification is-warning story-4">
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-info story-5">
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </article>
-          </div>
+      </div>
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+          <img src="/src/assets/images/story-2.jpg" alt="">
+          <p class="subtitle is-6">Came here on our first date.</p>
+        </div>
+        <div class="tile is-child box">
+          <img src="/src/assets/images/story-1.jpg" alt="">
+          <p class="subtitle is-6">First picture we ever took together.</p>
         </div>
       </div>
     </div>
+
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-8">
         <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-primary story-12">
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article class="tile is-child notification is-warning story-6">
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <img src="/src/assets/images/story-9.jpg" alt="">
+              <p class="subtitle">Family Trip to Minnesota</p>
             </article>
           </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-info story-11">
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child box">
+              <img src="/src/assets/images/story-4.jpg" alt="">
+              <p class="subtitle">Beach Day</p>
+            </article>
+            <article class="tile is-child box">
+              <img src="/src/assets/images/story-7.jpg" alt="">
+              <p class="subtitle">David being dumb...</p>
             </article>
           </div>
         </div>
       </div>
       <div class="tile is-parent">
-        <article class="tile is-child notification is-success story-9">
+        <article class="tile is-child box">
           <div class="content">
-            <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <img src="/src/assets/images/story-10.jpg" alt="">
+            <p class="subtitle">Cayute</p>
           </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="/src/assets/images/story-8.jpg" alt="">
+          <p class="subtitle">Mike's Wedding</p>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="/src/assets/images/story-5.jpg" alt="">
+          <p class="subtitle">Drum</p>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="/src/assets/images/story-6.jpg" alt="">
+          <p class="subtitle">First Halloween Together</p>
         </article>
       </div>
     </div>
@@ -66,79 +80,4 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  .story-1 {
-    background-image: url(../assets/images/story-1.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-2 {
-    background-image: url(../assets/images/story-2.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-3 {
-    background-image: url(../assets/images/story-3.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-4{
-    background-image: url(../assets/images/story-4.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-5 {
-    background-image: url(../assets/images/story-5.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-6 {
-    background-image: url(../assets/images/story-6.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-7 {
-    background-image: url(../assets/images/story-7.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-9 {
-    background-image: url(../assets/images/story-9.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-10 {
-    background-image: url(../assets/images/story-10.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-11 {
-    background-image: url(../assets/images/story-11.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-12 {
-    background-image: url(../assets/images/story-12.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-13 {
-    background-image: url(../assets/images/story-13.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .title {
-    color: transparent;
-  }
 </style>

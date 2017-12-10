@@ -10,7 +10,7 @@
     </div>
     <div class="navbar-menu" v-bind:class="{'is-active': isActive}" v-on:click="navBarActive">
       <router-link to="/" class="navbar-item"><span v-if='this.$store.getters.get_language == "English"'>Home</span><span v-else>Inicio</span></router-link>
-      <router-link to="/story" class="navbar-item"><span v-if='this.$store.getters.get_language == "English"'>Us</span><span v-else>Nosotros</span></router-link>
+      <router-link to="/story" class="navbar-item"><span v-if='this.$store.getters.get_language == "English"'>Our Story</span><span v-else>Nuestra Historia</span></router-link>
       <router-link to="/wedding" class="navbar-item"><span v-if='this.$store.getters.get_language == "English"'>Wedding</span><span v-else>La Boda</span></router-link>
       <router-link to="/registry" class="navbar-item"><span v-if='this.$store.getters.get_language == "English"'>Registry</span><span v-else>Registro</span></router-link>
       <router-link to="/rsvp" class="navbar-item">RSVP</router-link>
