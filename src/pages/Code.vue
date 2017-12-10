@@ -65,7 +65,7 @@ export default {
     submit () {
       axios({
         method: 'post',
-        url: `http://localhost:9292/rsvp/${this.invitation.code}`,
+        url: `http://admin.maribelanddavidtietheknot.com/rsvp/${this.invitation.code}`,
         data: {invitation: this.invitation, guests: this.guests}
       })
       .then((response) => {

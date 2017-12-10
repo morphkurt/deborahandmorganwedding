@@ -3,7 +3,7 @@
     <div v-if="errors">
       {{ errors }}
     </div>
-    <form action='localhost:9292' method="POST" v-on:submit.prevent="getData">
+    <form action='' method="POST" v-on:submit.prevent="getData">
       <div class="field">
         <label class="label">RSVP <span v-if='this.$store.getters.get_language == "English"'>Code</span><span v-else>Código</span></label>
         <div class="control">
@@ -33,7 +33,7 @@ export default {
   methods: {
     getData () {
       // Enable this when we start sending code
-      axios.get(`http://localhost:9292/rsvp/${this.rsvpCode}`)
+      axios.get(`http://admin.maribelanddavidtietheknot.com/rsvp/${this.rsvpCode}`)
         .then((response) => {
           this.$store.dispatch('ADD_INVITATION', response.data.invitation);
           this.$store.dispatch('ADD_GUESTS', response.data.guests);
