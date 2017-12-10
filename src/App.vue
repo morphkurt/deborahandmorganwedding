@@ -3,7 +3,7 @@
     <div v-bind:class="{'is-active': isActive, 'fadeOut': fadeOut}" class="modal language-modal animated">
       <div class="modal-background language-modal-background"></div>
       <div class="modal-content">
-        <h1 class="title has-text-centered">Choose Your Language</h1>
+        <h1 class="title has-text-centered">Choose Your Language/Elija Su Idioma</h1>
         <div class="field is-grouped is-grouped-centered">
           <p class="control">
             <a v-on:click="selectLanguage('English')" class="button is-primary is-medium">

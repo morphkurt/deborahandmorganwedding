@@ -1,11 +1,10 @@
 <template lang="html">
-  <div class="container">
-    <div class="tile is-ancestor story">
+  <div class="container story">
+    <div class="tile is-ancestor">
       <div class="tile is-parent">
         <article class="tile is-child notification is-success story-1">
           <div class="content">
             <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="subtitle has-text-right">Our first picture together...</p>
           </div>
         </article>
       </div>
@@ -36,7 +35,7 @@
       <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-primary story-10">
+            <article class="tile is-child notification is-primary story-12">
               <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>
             <article class="tile is-child notification is-warning story-6">
@@ -44,7 +43,7 @@
             </article>
           </div>
           <div class="tile is-parent">
-            <article class="tile is-child notification is-info story-7">
+            <article class="tile is-child notification is-info story-11">
               <p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </article>
           </div>
@@ -117,6 +116,24 @@ export default {
 
   .story-10 {
     background-image: url(../assets/images/story-10.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .story-11 {
+    background-image: url(../assets/images/story-11.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .story-12 {
+    background-image: url(../assets/images/story-12.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .story-13 {
+    background-image: url(../assets/images/story-13.jpg);
     background-size: cover;
     background-position: center;
   }

@@ -3,10 +3,10 @@
     <div class="column is-half is-offset-one-quarter">
       <section class="section">
         <h1 class="title is-2 is-spaced has-text-centered">
-          Registry
+          <span v-if='this.$store.getters.get_language == "English"'>Registry</span><span v-else>Registro de Boda</span>
         </h1>
         <p class="subtitle is-6 has-text-centered">
-          We are registered at:
+          <span v-if='this.$store.getters.get_language == "English"'>We are registered at:</span><span v-else>Estamos registrados en:</span>
         </p>
         <ul v-if="placesWeAreRegistered.length > 0">
           <li v-for="place in placesWeAreRegistered">

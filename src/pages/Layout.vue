@@ -4,10 +4,10 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-1 has-text-centered">
-            Maribel &amp; David
+            Maribel <span v-if='this.$store.getters.get_language == "English"'>&amp;</span><span v-else>y</span> David
           </h1>
           <p class="subtitle has-text-centered">
-            Are Getting Married
+            <span v-if='this.$store.getters.get_language == "English"'>Are Getting Married</span><span v-else>Se Casan</span>
           </p>
         </div>
       </div>
