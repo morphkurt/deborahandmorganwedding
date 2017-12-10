@@ -7,7 +7,7 @@
         <p class="has-text-centered"><span v-if='this.$store.getters.get_language == "English"'>Can't wait to see you at the wedding.</span><span v-else>Espero ver te en la boda</span></p>
         <div class="buttons is-centered">
           <router-link to="/" class="button is-primary"><span v-if='this.$store.getters.get_language == "English"'>Home</span><span v-else>Inicio</span></router-link>
-          <a class="button is-info"><span v-if='this.$store.getters.get_language == "English"'>Us</span><span v-else>Nosotros</span></a>
+          <a class="button is-info"><span v-if='this.$store.getters.get_language == "English"'>Our Story</span><span v-else>Nuestra Historia</span></a>
         </div>
       </section>
     </div>
