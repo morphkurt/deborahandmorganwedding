@@ -4,7 +4,7 @@
       <section class="section">
         <h1 class="title is-2 is-spaced has-text-centered"><span v-if='this.$store.getters.get_language == "English"'>Ceremony</span><span v-else>Ceremonia</span></h1>
         <p class="subtitle is-6 has-text-centered">St Francis of Assisi Church</p>
-        <p class="has-text-centered"><span v-if='this.$store.getters.get_language == "English"'>Begins at</span><span>Comienza a las</span> 1:00pm</p>
+        <p class="has-text-centered"><span v-if='this.$store.getters.get_language == "English"'>Begins at</span><span v-else>Comienza a las</span> 1:00pm</p>
         <p class="has-text-centered">813 W Roosevelt Rd</p>
         <p class="has-text-centered">Chicago, IL 60608</p>
         <p class="has-text-centered"><a class="button is-info" href="https://www.google.com/maps/place/St+Francis+of+Assisi+Catholic+Church/@41.8669567,-87.6482355,19z/data=!4m17!1m11!4m10!1m3!2m2!1d-87.6466584!2d41.8716865!1m5!1m1!1s0x880e2cefeccf2fef:0xbbbceb8435f497b1!2m2!1d-87.6476863!2d41.866978!3m4!1s0x880e2cefeccf2fef:0xbbbceb8435f497b1!8m2!3d41.866978!4d-87.6476863">Directions</a></p>
