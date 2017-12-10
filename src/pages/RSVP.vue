@@ -7,12 +7,12 @@
       <div class="field">
         <label class="label">RSVP <span v-if='this.$store.getters.get_language == "English"'>Code</span><span v-else>Código</span></label>
         <div class="control">
-          <input v-if='this.$store.getters.get_language == "English"' class="input" type="text" placeholder="Enter your RSVP code" v-model="rsvpCode">
+          <input v-if='this.$store.getters.get_language == "English"' class="input" type="text" placeholder="Enter your RSVP code" v-model="rsvpCode" disabled>
           <input v-else class="input" type="text" placeholder="Introduzca el Código RSVP" v-model="rsvpCode">
         </div>
         <p class="help"><span v-if='this.$store.getters.get_language == "English"'>This is the code found in your RSVP letter</span><span v-else>El Código Encontrado en la Letra de RSVP</span></p>
         <div class="control">
-          <button class="button is-info"><span v-if='this.$store.getters.get_language == "English"'>Submit</span><span v-else>Enviar</span></button>
+          <button class="button is-info" disabled><span v-if='this.$store.getters.get_language == "English"'>Submit</span><span v-else>Enviar</span></button>
         </div>
       </div>
     </form>
@@ -32,7 +32,6 @@ export default {
   },
   methods: {
     getData () {
-      // Enable this when we start sending code
       axios.get(`http://admin.maribelanddavidtietheknot.com/rsvp/${this.rsvpCode}`)
         .then((response) => {
           this.$store.dispatch('ADD_INVITATION', response.data.invitation);
