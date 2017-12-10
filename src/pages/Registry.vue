@@ -9,8 +9,8 @@
           <span v-if='this.$store.getters.get_language == "English"'>We are registered at:</span><span v-else>Estamos registrados en:</span>
         </p>
         <ul v-if="placesWeAreRegistered.length > 0">
-          <li v-for="place in placesWeAreRegistered">
-            {{ place }}
+          <li v-for="place in placesWeAreRegistered" class="has-text-centered">
+            <a :href="place.url" target="_blank"><img :src="place.imageUrl" :alt="place.name"></a>
           </li>
         </ul>
         <p class="has-text-centered" v-else>
@@ -26,11 +26,15 @@
 export default {
   data () {
     return {
-      placesWeAreRegistered: []
+      placesWeAreRegistered: this.$store.getters.get_places_we_are_registered
     }
   }
 }
 </script>
 
 <style lang="css" scoped>
+  img {
+    margin-bottom: 50px;
+    max-width: 60%;
+  }
 </style>
