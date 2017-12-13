@@ -11,11 +11,11 @@
       <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
           <img src="/src/assets/images/story-2.jpg" alt="">
-          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>Came here on our first date.</span><span v-else>Venimos aquí en nuestra primera cita.</span></p>
+          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>Came here on our first date</span><span v-else>Venimos aquí en nuestra primera cita</span></p>
         </div>
         <div class="tile is-child box">
           <img src="/src/assets/images/story-1.jpg" alt="">
-          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>First picture we ever took together.</span><span v-else>La primera foto que nos tomamos juntos.</span></p>
+          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>First picture we ever took together</span><span v-else>La primera foto que nos tomamos juntos</span></p>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
           <div class="tile is-parent">
             <article class="tile is-child box">
               <img src="/src/assets/images/story-9.jpg" alt="">
-              <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>Family Trip to Minnesota.</span><span v-else>Viaje familiar a Minnesota.</span></p>
+              <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>Family Trip to Minnesota</span><span v-else>Viaje familiar a Minnesota</span></p>
             </article>
           </div>
           <div class="tile is-parent is-vertical">
@@ -36,7 +36,7 @@
             </article>
             <article class="tile is-child box">
               <img src="/src/assets/images/story-7.jpg" alt="">
-              <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>David being dumb.</span><span v-else>David siendo tonto.</span></p>
+              <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>David being dumb</span><span v-else>David siendo tonto</span></p>
             </article>
           </div>
         </div>
@@ -55,13 +55,13 @@
       <div class="tile is-parent">
         <article class="tile is-child box">
           <img src="/src/assets/images/story-8.jpg" alt="">
-          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>The day Maribel met my parents.</span><span v-else>El primer dia que Maribel conocio a mis papás.</span></p>
+          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>The day Maribel met my parents</span><span v-else>El primer dia que Maribel conocio a mis papás</span></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
           <img src="/src/assets/images/story-5.jpg" alt="">
-          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>A night out.</span><span v-else>Una noche de salida.</span></p>
+          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>A night out</span><span v-else>Una noche de salida</span></p>
         </article>
       </div>
       <div class="tile is-parent">
