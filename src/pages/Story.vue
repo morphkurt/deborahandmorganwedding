@@ -11,11 +11,11 @@
       <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
           <img src="/src/assets/images/story-2.jpg" alt="">
-          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>Came here on our first date.</span><span v-else>Vinimos aquí en nuestra primera salida.</span></p>
+          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>Came here on our first date.</span><span v-else>Venimos aquí en nuestra primera cita.</span></p>
         </div>
         <div class="tile is-child box">
           <img src="/src/assets/images/story-1.jpg" alt="">
-          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>First picture we ever took together.</span><span v-else>La primera foto que tomamos juntos.</span></p>
+          <p class="subtitle is-6"><span v-if='this.$store.getters.get_language == "English"'>First picture we ever took together.</span><span v-else>La primera foto que nos tomamos juntos.</span></p>
         </div>
       </div>
     </div>
@@ -55,19 +55,19 @@
       <div class="tile is-parent">
         <article class="tile is-child box">
           <img src="/src/assets/images/story-8.jpg" alt="">
-          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>Mike's Wedding</span><span v-else>La Boda de Mike</span></p>
+          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>The day Maribel met my parents.</span><span v-else>El primer dia que Maribel conocio a mis papás.</span></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
           <img src="/src/assets/images/story-5.jpg" alt="">
-          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>Drum</span><span v-else>Tambor</span></p>
+          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>A night out.</span><span v-else>Una noche de salida.</span></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
           <img src="/src/assets/images/story-6.jpg" alt="">
-          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>First Halloween Together</span><span v-else>Primero Halloween Juntos</span></p>
+          <p class="subtitle"><span v-if='this.$store.getters.get_language == "English"'>First Halloween Together</span><span v-else>Primer Halloween Juntos</span></p>
         </article>
       </div>
     </div>

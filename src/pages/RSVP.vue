@@ -5,10 +5,10 @@
     </div>
     <form action='' method="POST" v-on:submit.prevent="getData">
       <div class="field">
-        <label class="label">RSVP <span v-if='this.$store.getters.get_language == "English"'>Code</span><span v-else>Código</span></label>
+        <label class="label"><span v-if='this.$store.getters.get_language == "English"'>RSVP Code</span><span v-else>Código de RSVP</span></label>
         <div class="control">
           <input v-if='this.$store.getters.get_language == "English"' class="input" type="text" placeholder="Enter your RSVP code" v-model="rsvpCode" disabled>
-          <input v-else class="input" type="text" placeholder="Introduzca el Código RSVP" v-model="rsvpCode">
+          <input v-else class="input" type="text" placeholder="Introduzca el Código de RSVP" v-model="rsvpCode">
         </div>
         <p class="help"><span v-if='this.$store.getters.get_language == "English"'>This is the code found in your RSVP letter</span><span v-else>El Código Encontrado en la Letra de RSVP</span></p>
         <div class="control">
