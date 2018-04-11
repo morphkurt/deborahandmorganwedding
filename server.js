@@ -17,5 +17,5 @@ app.get('/', function (req, res) {
 
 const port = process.env.PORT || 5000;
 app.listen(port, function () {
-  console.log( 'Express serving...' )
+  console.log( `Express serving on port ${port}...` )
 })
