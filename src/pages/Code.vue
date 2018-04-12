@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    <h1 class="subtitle is-6 has-text-centered"><span v-if='this.$store.getters.get_language == "English"'>You are invited to our wedding.<br>Please click edit and check off who will be attending.</span><span v-else>Estás invitado a nuestra boda.<br>Por favor marque quién asistirá.</span></h1>
+    <h1 class="subtitle is-6 has-text-centered"><span v-if='this.$store.getters.get_language == "English"'>You are invited to our wedding.<br>Please click edit and check off who will be attending.</span><span v-else>Estás invitado a nuestra boda.<br>Por favor hacer clic en al botón marcado editar y marque quién asistirá.</span></h1>
     <form v-on:submit.prevent="submit" method="post">
       <table class="table is-fullwidth">
         <thead>
