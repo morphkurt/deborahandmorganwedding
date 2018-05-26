@@ -9,7 +9,6 @@ import Thanks from '../pages/Thanks.vue'
 import RSVPLayout from '../pages/RSVPLayout.vue'
 import RSVP from '../pages/RSVP.vue';
 import Code from '../pages/Code.vue';
-import CodeEdit from '../pages/CodeEdit.vue';
 import Story from '../pages/Story.vue';
 
 const routes = [
@@ -40,10 +39,6 @@ const routes = [
             {
               path: ':code',
               component: Code
-            },
-            {
-              path: ':code/edit',
-              component: CodeEdit
             },
           ]
         },
