@@ -36,21 +36,21 @@
         </thead>
         <tbody>
           <tr v-for="guest in guests">
-            <td :class="{attending: guest['attending?']}" class="not-attending">
+            <td :class="{attending: guest['attending']}" class="not-attending">
               <p class="has-text-centered">
                 {{ guest.first_name }} {{ guest.last_name }}
               </p>
             </td>
             <td>
               <p class="has-text-centered">
-                <input v-model="guest['attending?']" type="checkbox">
+                <input v-model="guest['attending']" type="checkbox">
               </p>
             </td>
           </tr>
         </tbody>
       </table>
-      <div v-if="invitation['plus_one?'] === true">
-        <div v-if="invitation['plus_one_added?'] === false">
+      <div v-if="invitation['plus_one'] === true">
+        <div v-if="invitation['plus_one_added'] === false">
           <div class="field">
             <div class="control has-text-centered">
               <button v-on:click.prevent="openModal" class="button is-text">
@@ -173,8 +173,11 @@ export default {
   },
   methods: {
     submit () {
+      axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
       axios({
         method: 'post',
+        // Use this for local development
+        // url: `http://localhost:9292/rsvp/${this.rsvpCode}`,
         url: `http://admin.maribelanddavidtietheknot.com/rsvp/${this.invitation.code}`,
         data: {invitation: this.invitation, guests: this.guests}
       })
@@ -192,10 +195,10 @@ export default {
         invitation_id: this.invitation.id,
         first_name: this.plusOneFirstName,
         last_name: this.plusOneLastName,
-        'attending?': false,
+        'attending': false,
         family_side: this.invitation.family_side,
-        'is_plus_one?': true});
-      this.invitation['plus_one_added?'] = true;
+        'is_plus_one': true});
+      this.invitation['plus_one_added'] = true;
       this.isActive = false;
     },
     openModal () {

@@ -5,14 +5,44 @@
     </div>
     <form action='' method="POST" v-on:submit.prevent="getData">
       <div class="field">
-        <label class="label"><span v-if='this.$store.getters.get_language == "English"'>RSVP Code</span><span v-else>Código de RSVP</span></label>
+        <label class="label">
+          <span v-if='this.$store.getters.get_language == "English"'>
+            RSVP Code
+          </span>
+          <span v-else>
+            Código de RSVP
+          </span>
+        </label>
         <div class="control">
-          <input v-if='this.$store.getters.get_language == "English"' class="input" type="text" placeholder="Enter your RSVP code" v-model="rsvpCode">
-          <input v-else class="input" type="text" placeholder="Introduzca el Código de RSVP" v-model="rsvpCode">
+          <input
+            v-if='this.$store.getters.get_language == "English"'
+            class="input"
+            type="text"
+            placeholder="Enter your RSVP code"
+            v-model="rsvpCode">
+          <input
+            v-else class="input"
+            type="text"
+            placeholder="Introduzca el Código de RSVP"
+            v-model="rsvpCode">
         </div>
-        <p class="help"><span v-if='this.$store.getters.get_language == "English"'>This is the code found in your RSVP letter</span><span v-else>El Código Encontrado en la Letra de RSVP</span></p>
+        <p class="help">
+          <span v-if='this.$store.getters.get_language == "English"'>
+            This is the code found in your RSVP letter
+          </span>
+          <span v-else>
+            El Código Encontrado en la Letra de RSVP
+          </span>
+        </p>
         <div class="control">
-          <button class="button is-info"><span v-if='this.$store.getters.get_language == "English"'>Submit</span><span v-else>Enviar</span></button>
+          <button class="button is-info">
+            <span v-if='this.$store.getters.get_language == "English"' disabled>
+              Submit
+            </span>
+            <span v-else>
+              Enviar
+            </span>
+          </button>
         </div>
       </div>
     </form>
@@ -32,6 +62,9 @@ export default {
   },
   methods: {
     getData () {
+      axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+      // Use this url for local development
+      // axios.get(`http://localhost:9292/rsvp/${this.rsvpCode}`)
       axios.get(`http://admin.maribelanddavidtietheknot.com/rsvp/${this.rsvpCode}`)
         .then((response) => {
           this.$store.dispatch('ADD_INVITATION', response.data.invitation);
