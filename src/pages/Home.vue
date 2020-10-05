@@ -4,9 +4,6 @@
       <h1 class="title has-text-centered">
         Debroah <span >&amp;</span> Morgan
       </h1>
-      <p class="subtitle has-text-centered">
-        <span >Are Getting Married</span>
-      </p>
     </div>
   </div>
 </template>
