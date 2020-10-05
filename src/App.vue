@@ -54,7 +54,6 @@ export default {
     }
   },
   mounted: function () {
-    self.$store.dispatch('UPDATE_LANGUAGE', "English");
     this.language === "" ? this.isActive = true: this.isActive = false;
   }
 }

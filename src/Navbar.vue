@@ -10,8 +10,8 @@
     </div>
     <div class="navbar-menu" v-bind:class="{'is-active': isActive}" v-on:click="navBarActive">
       <router-link to="/" class="navbar-item"><span>Home</span></router-link>
-      <router-link to="/story" class="navbar-item"><span>Our Story</span></router-link>
       <router-link to="/wedding" class="navbar-item"><span>Wedding</span></router-link>
+      <router-link to="/story" class="navbar-item"><span>Our Story</span></router-link>
       <router-link to="/rsvp" class="navbar-item">RSVP</router-link>
     </div>
   </nav>

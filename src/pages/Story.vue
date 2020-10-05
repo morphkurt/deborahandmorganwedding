@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="container story">
     <div class="tile is-ancestor">
-      <div class="tile is-parent">
+      <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
-          <img src="/src/assets/images/dnm-3.jpg" alt="">
+          <img src="/src/assets/images/dnm-5.jpg" alt="">
           <h1 class="has-text-centered"><span >
             </br>
             </br>
@@ -18,9 +18,12 @@
       </div>
       <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
-          <img src="/src/assets/images/dnm-5.jpg" alt="">
+          <img src="/src/assets/images/dnm-7.png" alt="">
         </div>
-        <div class="tile is-child box">
+        
+      </div>
+      <div class="tile is-4 is-vertical is-parent">
+     <div class="tile is-child box">
           <img src="/src/assets/images/dnm-6.png" alt="">
           <p class="subtitle is-6 has-text-centered"><span ></span></p>
         </div>
