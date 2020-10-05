@@ -6,42 +6,31 @@
     <form action='' method="POST" v-on:submit.prevent="getData">
       <div class="field">
         <label class="label">
-          <span v-if='this.$store.getters.get_language == "English"'>
+          <span>
             RSVP Code
           </span>
-          <span v-else>
-            Código de RSVP
-          </span>
+         
         </label>
         <div class="control">
           <input
-            v-if='this.$store.getters.get_language == "English"'
             class="input"
             type="text"
             placeholder="Enter your RSVP code"
             v-model="rsvpCode">
-          <input
-            v-else class="input"
-            type="text"
-            placeholder="Introduzca el Código de RSVP"
-            v-model="rsvpCode">
+         
         </div>
         <p class="help">
-          <span v-if='this.$store.getters.get_language == "English"'>
+          <span >
             This is the code found in your RSVP letter
           </span>
-          <span v-else>
-            El Código Encontrado en la Letra de RSVP
-          </span>
+  
         </p>
         <div class="control">
           <button class="button is-info">
-            <span v-if='this.$store.getters.get_language == "English"' disabled>
+            <span>
               Submit
             </span>
-            <span v-else>
-              Enviar
-            </span>
+         
           </button>
         </div>
       </div>

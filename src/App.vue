@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-bind:class="{'is-active': isActive, 'fadeOut': fadeOut}" class="modal language-modal animated">
+    <!--div v-bind:class="{'is-active': isActive, 'fadeOut': fadeOut}" class="modal language-modal animated">
       <div class="modal-background language-modal-background"></div>
       <div class="modal-content">
         <h1 class="title has-text-centered">Choose Your Language/Elija Su Idioma</h1>
@@ -17,7 +17,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div-->
     <navbar></navbar>
     <transition :name="animationName" mode="out-in">
       <router-view></router-view>
@@ -54,6 +54,7 @@ export default {
     }
   },
   mounted: function () {
+    self.$store.dispatch('UPDATE_LANGUAGE', "English");
     this.language === "" ? this.isActive = true: this.isActive = false;
   }
 }
