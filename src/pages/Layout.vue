@@ -1,19 +1,18 @@
 <template lang="html">
-  <div class="">
+  <div class="layout">
     <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-1 has-text-centered">
-            Deborah&amp; Morgan
-          </h1>
+          <!--h1 class="title is-1 has-text-centered">
+            We are getting married!
+          </h1-->
                   <p class="title has-text-centered">
-            <span>We are getting married!</span>
           </p>
-            <div class="tile is-parent">
+            <!--div class="tile is-parent">
         <div class="tile is-child box has-text-centered">
           <img src="/src/assets/images/dnm-3.jpg" alt="">
         </div>
-      </div>
+      </div-->
   
         </div>
       </div>
@@ -26,13 +25,22 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      animationName: 'fade'
-    }
+      animationName: "fade",
+    };
   },
-}
+};
 </script>
 
 <style lang="css">
+.layout {
+  height: 100%;
+  background-image: url(../assets/images/dnm-8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 55%;
+  padding-top: 72px;
+}
 </style>

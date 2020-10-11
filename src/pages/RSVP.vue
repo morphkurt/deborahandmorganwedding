@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <!--div class="">
     <div v-if="errors">
       {{ errors }}
     </div>
@@ -35,37 +35,39 @@
         </div>
       </div>
     </form>
-  </div>
+  </div-->
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  data () {
+  data() {
     return {
-      animationName: 'fade',
-      rsvpCode: '',
-      errors: ''
-    }
+      animationName: "fade",
+      rsvpCode: "",
+      errors: "",
+    };
   },
   methods: {
-    getData () {
-      axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+    getData() {
+      axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
       // Use this url for local development
       // axios.get(`http://localhost:9292/rsvp/${this.rsvpCode}`)
-      axios.get(`http://admin.maribelanddavidtietheknot.com/rsvp/${this.rsvpCode}`)
+      axios
+        .get(`http://admin.maribelanddavidtietheknot.com/rsvp/${this.rsvpCode}`)
         .then((response) => {
-          this.$store.dispatch('ADD_INVITATION', response.data.invitation);
-          this.$store.dispatch('ADD_GUESTS', response.data.guests);
+          this.$store.dispatch("ADD_INVITATION", response.data.invitation);
+          this.$store.dispatch("ADD_GUESTS", response.data.guests);
           this.$router.push({ path: `rsvp/${this.rsvpCode}` });
         })
         .catch((error) => {
-          this.errors = "Sorry, couldn't find your invitation. Please input your RSVP code one more time."
+          this.errors =
+            "Sorry, couldn't find your invitation. Please input your RSVP code one more time.";
         });
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="css">
