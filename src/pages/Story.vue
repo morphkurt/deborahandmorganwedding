@@ -52,7 +52,7 @@
             <article class="tile is-child box">
               <img src="/src/assets/images/dnm-2.jpg" alt="">
               <p class=" has-text-centered"><span >
-                9 months later, during a morning coffee trip and stroll across Alexandra Headland beach, the BIG  questions was popped! </span></p>
+                9 months later, during a morning coffee trip and stroll across Alexandra Headland beach, the BIG  question was popped! </span></p>
             </article>
           
           </div>
@@ -61,7 +61,7 @@
               <img src="/src/assets/images/dnm-4.png" alt="">
               <p class="has-text-centered"><span >
                 We are now entering the next chapter in our life together.
-                We would love for all of you to be there to share this most special day with us on 16.04.2021 at Alexandra Headland beach we got engaged!
+                We would love for all of you to be there to share this most special day with us on 16.04.2021 at Alexandra Headland beach where we got engaged!
                 </span></p>
             </article>
           

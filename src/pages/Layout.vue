@@ -36,7 +36,7 @@ export default {
 <style lang="css">
 .layout {
   height: 100%;
-  background-image: url(../assets/images/dnm-8.jpg);
+  background-image: url(../assets/images/dnm-12.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
