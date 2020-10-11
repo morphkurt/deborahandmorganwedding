@@ -40,7 +40,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 20%;
+  background-position: center;
   padding-top: 72px;
 }
 </style>
